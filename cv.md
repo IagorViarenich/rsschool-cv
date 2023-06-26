@@ -21,3 +21,11 @@ frontend(html&css) - elementary
 
 https://github.com/IagorViarenich/web-development/blob/master/rsCodeExample.php
 
+## Education
+
+__2022 - present__
+Technical University of Kosice, computer science
+
+## English level
+
+A2 - B1
