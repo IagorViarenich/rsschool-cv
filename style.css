@@ -1,0 +1,170 @@
+/* structure 
+    1)header
+    2)main-section
+    2.1) about me
+    2.2) skills
+    2.3) code
+    2.4) education
+    3) footer & contact info
+*/
+
+/* 1) header */
+
+header {
+    background-color: #6C8CD5;
+    height: 75px;
+}
+
+nav b {
+    display: inline-block;
+    font-size: 20px;
+    width: 18%;
+    text-align: center;
+    color: black;
+    margin-top: 25px;
+}
+
+a :hover {
+    background-color: #FFFF73;
+}
+
+.logos {
+    width: 30px;
+    height: 30px;
+}
+
+.logo-section {
+    display: inline-block;
+    margin-top: 25px;
+}
+
+/* 2) main-section */
+
+.main-section {
+    width: 90%;
+    float: left;
+    margin-right: 0;
+}
+
+main h2 {
+    text-align: center;
+}
+
+main {
+    background-color: #f5f5dc;
+}
+
+main p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* 2.1) about me */
+
+.aboutme-section img {
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+    border: 3px solid white;
+    box-shadow: 0 0 7px #666;
+    margin-left: 43%;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.aboutme-section h1 {
+    text-align: center;
+}
+
+/* 2.2)skills */
+
+.skill-bar {
+    margin-bottom: 10px;
+}
+
+.skill-label {
+    font-weight: bold;
+}
+
+.skill-progress {
+    background-color: #d7d7d7;
+    height: 10px;
+    border-radius: 5px;
+}
+
+.skill-progress-value {
+    background-color: #007bff;
+    height: 100%;
+}
+
+/* 2.3) code */
+
+.code-field {
+    background-color: #f9f9f9;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+/* 2.4) education */
+
+.education {
+    background-color: #f9f9f9;
+    border: 1px solid #d7d7d7;
+    border-radius: 5px;
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.education h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.education ul {
+    margin: 0;
+    padding: 0;
+}
+
+.education li {
+    margin-bottom: 10px;
+}
+
+/* 3) footer & contact info */
+
+footer {
+    background-color: #d7d7d7;
+    padding: 20px;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer img {
+    width: 30px;
+    height: 30px;
+}
+
+.contact-info {
+    margin-bottom: 10px;
+}
+
+.contact-info div {
+    margin-bottom: 5px;
+}
+
+.icon-container {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
