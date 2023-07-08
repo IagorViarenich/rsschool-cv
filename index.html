@@ -1,1 +1,133 @@
-<h1>Пустой шаблон</h1>
+<!DOCTYPE html>
+<html lang="RU">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iagor Viarenich CV</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- header -->
+  <header>
+    <div class="main-section">
+      <nav>
+        <a href="#about" class="anchor-link"><b>About Me</b></a>
+        <a href="#skills" class="anchor-link"><b>Skills</b></a>
+        <a href="#code" class="anchor-link"><b>Code</b></a>
+        <a href="#education" class="anchor-link"><b>Education</b></a>
+        <a href="#contacts" class="anchor-link"><b>Contacts</b></a>
+      </nav>
+    </div>
+<!-- logos -->
+    <div class="logo-section">
+      <a href="https://www.facebook.com/profile.php?id=100010473496068"><img class="logos" src="content/facebook.png"
+          alt="Facebook"></a>
+      <a href="https://github.com/IagorViarenich?tab=repositories"><img class="logos" src="content/github.png"
+          alt="GitHub"></a>
+      <a href="https://www.codewars.com/users/Iagor_Viarenich"><img class="logos" src="content/codewars.png"
+          alt="Codewars"></a>
+    </div>
+  </header>
+<!-- main -->
+  <main>
+<!-- about me -->
+    <div id="about" class="aboutme-section">
+      <img src="content/photo.jpg" alt="My photo">
+      <h1>Iagor Viarenich</h1>
+      <h2>About me</h2>
+      <p>I live in Slovakia, in Košice. I study at the Technical University in the Faculty of Electrical Engineering and
+        Computer Science. I am interested in computer games and history</p>
+    </div>
+<!-- skills -->
+    <nav id="skills">
+      <h2>My skills</h2>
+    </nav>
+    <div class="skill-bar">
+      <div class="skill-label">HTML/CSS</div>
+      <div class="skill-progress">
+        <div class="skill-progress-value" style="width: 50%;"></div>
+      </div>
+    </div>
+
+    <div class="skill-bar">
+      <div class="skill-label">JavaScript</div>
+      <div class="skill-progress">
+        <div class="skill-progress-value" style="width: 20%;"></div>
+      </div>
+    </div>
+
+    <div class="skill-bar">
+      <div class="skill-label">PHP</div>
+      <div class="skill-progress">
+        <div class="skill-progress-value" style="width: 60%;"></div>
+      </div>
+    </div>
+
+    <div class="skill-bar">
+      <div class="skill-label">English</div>
+      <div class="skill-progress">
+        <div class="skill-progress-value" style="width: 40%;"></div>
+      </div>
+    </div>
+<!-- code example -->
+    <nav id="code">
+      <h2>My code</h2>
+    </nav>
+    <div class="code-field">
+      <code>
+        //PHP <br>
+        $searchRoot = 'C:\xampp\htdocs\welcome\test_search'; <br>
+        $searchName = 'test.txt'; <br>
+        $searchResult = array(); <br>
+
+        /** <br>
+        * @param string $searchRoot<br>
+        * @param string $searchName <br>
+        * @param array $searchResult <br>
+        * @return void<br>
+        */<br>
+        function search(string $searchRoot, string $searchName, array &$searchResult): void<br>
+        {<br>
+        $directory = scandir($searchRoot);<br>
+        echo <br>;
+        $count = sizeof($directory);<br>
+        for ($i = 2; $i $count; $i++) {<br>
+        $address = "$searchRoot" . "/" . "$directory[$i]";<br>
+        if ($directory[$i] === $searchName) {<br>
+        $searchResult[] = $address;<br>
+        } elseif (is_dir($address)) {<br>
+        search($address, $searchName, $searchResult);<br>
+        }<br>
+        }<br>
+        } <br>
+      </code>
+    </div>
+<!-- education -->
+    <h2 id="education">Education</h2>
+    <div class="education">
+      <ul>
+        <li>Technical University of Kosice (2022 - now)</li>
+        <li>Skillbox PHP Developer (2022 - now)</li>
+        <li>RSSchool FE/Stage0 (2023 - now)</li>
+      </ul>
+    </div>
+<!-- footer -->
+    <footer>
+      <div id="contacts" class="contact-info">
+        <div>Email: <a href="mailto:iagorviarenich@gmail.com">iagorviarenich@gmail.com</a></div>
+        <div>Phone: <a href="tel:+421951741841">+421951741841</a></div>
+        <p>Iagor Viarenich, 2023, for RSSchool</p>
+      </div>
+      <div class="icon-container">
+        <a href="https://github.com/IagorViarenich?tab=repositories">
+          <img src="content/github.png" alt="GitHub">
+        </a>
+        <a href="https://rs.school/js/">
+          <img src="content/rsschool.png" alt="RSSchool">
+        </a>
+      </div>
+    </footer>
+  </main>
+</body>
+
+</html>
